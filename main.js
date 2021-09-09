@@ -7,7 +7,9 @@ let listEls = document.querySelectorAll('.list')
 let allBtn = document.querySelector('.btn-all')
 let beforeBtn = document.querySelector('.btn-before')
 let afterBtn = document.querySelector('.btn-after')
-let listCheck = "";
+let listCheck = document.querySelectorAll('.listCheck');
+let allDel = document.querySelector('.allDel')
+let allSelect = document.querySelector('.allSelect')
 
 
 // 리스트 추가1 - 'enter'버튼으로 추가하기
@@ -194,10 +196,39 @@ function listCount() {
 }
 
 
-let allDel = document.querySelector('.allDel')
+// 전체선택
+allSelect.addEventListener('click', function() {
+
+    listCheck = document.querySelectorAll('.listCheck')
+    listLb = document.querySelectorAll('.listLb')
+
+    if(allSelect.checked == true) { // 전체선택 체크
+
+        for(let i=0; i<listCheck.length; i++) {
+            listCheck[i].checked = true;
+            listLb[i].style.textDecoration = "line-through"
+        }
+
+    } else {    // 전체선택 해제
+
+        for(let i=0; i<listCheck.length; i++) {
+            listCheck[i].checked = false;
+            listLb[i].style.textDecoration = "none"
+        }
+
+    }
+
+    listCount()
+
+})
+
+
 
 // 전체삭제
 allDel.addEventListener('click', function() {
 
     listBox_inner.innerHTML = ''
+    allSelect.checked = false
+    listCount()
+
 })
