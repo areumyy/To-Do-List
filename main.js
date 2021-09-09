@@ -14,10 +14,6 @@ let listCheck = "";
 addTxt.addEventListener('keyup', function(e) {
 
     if(e.key === 'Enter') {
-
-        // console.log(typeof e.value)
-        // console.log(e.value)
-        // console.log(addTxt.value)
         addList()  
     }
 
@@ -116,15 +112,6 @@ function delList() {
 
     listCount()
 
-    // for(let i=0; i<delBtn.length; i++) {
-
-    //     delBtn[i].addEventListener('click', function() {
-    //         listEls[i].remove();
-    //     })
-
-    //     listCount();
-    // }
-
 }
 
 
@@ -206,23 +193,9 @@ function listCount() {
 
 }
 
-// let allDel = document.querySelector('.allDel')
-// // 전체삭제
-// allDel.addEventListener('click', function() {
-
-//     listEls = document.querySelectorAll('.list')
-
-//     console.log("자식", listEls[1])
-
-//     for(let i=0; i<listEls.length; i++) {
-        
-//         listEls[i].remove()
-//         i--
-//     }
-
-// })
 
 let allDel = document.querySelector('.allDel')
+
 // 전체삭제
 allDel.addEventListener('click', function() {
 
