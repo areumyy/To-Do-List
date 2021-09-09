@@ -1,0 +1,216 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;700&display=swap');
+
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.inner {
+    width: 600px;
+    height: 600px;
+    padding: 30px;
+    margin: 80px auto;
+    box-sizing: border-box;
+    background-image: url("https://mblogthumb-phinf.pstatic.net/20160710_231/wkao9489_1468119894403yKgBG_JPEG/NaverBlog_20160710_120454_03.jpg?type=w2");
+}
+
+header {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(48, 47, 47);   
+}
+
+header .header-icon {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.searchBtn {
+    width: 120px;
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid rgb(163, 155, 155);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.searchBtn:nth-child(3) {
+    margin-right: 0px;
+}
+
+.searchBtn:hover {
+    border: 2px solid rgb(75, 74, 74);
+}
+
+.searchBtn.btn-all {
+    background-color: rgb(218, 226, 217);
+}
+
+.searchBtn.btn-before {
+    background-color: rgb(246, 223, 226);
+}
+
+.searchBtn.btn-after {
+    background-color: rgb(220, 237, 246);
+}
+
+.addBox {
+    height: 50px;
+}
+
+.addBox_inner {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.addTxt{
+    width: 100%;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(163, 155, 155);
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.addBtn {
+    border:none;
+    background-color: transparent;
+    font-size: 23px;
+    color: rgb(163, 155, 155);
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    color: rgb(75, 74, 74);
+}
+
+.notice {
+    color: rgb(201, 65, 65);
+    font-size: 12px;
+}
+
+.listBox_inner {
+    width: 100%;
+    height: 280px;
+    margin: 20px 0;
+    overflow: auto;
+    font-size: 20px;
+}
+
+.list {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.listCheck {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border: 1px solid;
+    outline: 0;
+    cursor: pointer;
+}
+
+.listCheck:checked {
+    background-color: #fff;
+}
+
+.listLb {
+    width: 90%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.delBtn {
+    width: 10%;
+    display: inline-block;
+    text-align: end;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    font-size: 20px;
+    color: rgb(163, 155, 155);
+    cursor: pointer;
+}
+
+.delBtn:hover {
+    color: rgb(75, 74, 74);
+}
+
+.delBox {
+    text-align: right;
+}
+
+.allDel {
+    color: rgb(163, 155, 155);
+    text-decoration: none;
+}
+
+.allDel:hover {
+    color: rgb(75, 74, 74);
+}
+
+
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .inner {
+        width: 500px;
+        height: 500px;
+    }
+
+    header {
+        font-size: 40px;
+    }
+
+    header .header-icon {
+        font-size: 40px;
+    }
+
+    .searchBtn {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        margin-right: 8px;
+    }
+
+    .addTxt {
+        font-size: 15px;
+    }
+
+    .listBox_inner {
+        font-size: 15px;
+    }
+
+    .list {
+        margin-bottom: 6px;
+    }
+    
+    .listBox_inner {
+        height: 230px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
